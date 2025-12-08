@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R Rides Car Rental - Your Perfect Ride Awaits</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+</head>
+
+  <body>
+    <!-- Header -->
+   <header class="header">
+  <div class="container">
+    <div class="nav-brand">
+      <a href="#home">
+        <img src="images/logo/logo.png" alt="R Rides Car Rental" class="logo-img" />
+      </a>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#fleet" class="nav-link">Fleet</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <span class="phone-number">
+        <i class="fas fa-phone"></i>
+        +91-9919544949
+      </span>
+      <button class="btn btn-primary">Book Now</button>
+    </div>
+
+    <div class="mobile-menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Your Perfect Ride, Just a Click Away</h1>
+          <p class="hero-subtitle">
+            Premium Car Rentals Starting from ₹2,200/day
+          </p>
+
+          <!-- Trust Indicators -->
+          <div class="trust-indicators">
+            <div class="trust-item">
+              <i class="fas fa-star"></i>
+              <span>4.9/5 Rating</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-users"></i>
+              <span>5000+ Happy Customers</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Verified & Insured</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-headset"></i>
+              <span>24/7 Support</span>
+            </div>
+          </div>
+
+          <!-- Quick Booking Form -->
+          <div class="booking-form-compact">
+            <form class="booking-form-horizontal" id="whatsapp-booking-form">
+              <div class="form-group-compact">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="location-display">Lucknow</span>
+              </div>
+              <div class="form-group-compact">
+                <i class="fas fa-calendar"></i>
+                <input type="date" id="pickup-date" required />
+              </div>
+              <div class="form-group-compact">
+                <i class="fas fa-car"></i>
+                <select id="car-selection" required>
+                  <option value="">Select Car</option>
+                  <optgroup label="Budget Friendly">
+                    <option value="Maruti Celerio - ₹2,200/day">
+                      Maruti Celerio - ₹2,200/day
+                    </option>
+                    <option value="Maruti Swift - ₹2,500/day">
+                      Maruti Swift - ₹2,500/day
+                    </option>
+                  </optgroup>
+                  <optgroup label="Family Cars">
+                    <option value="Hyundai Aura CNG - ₹3,000/day">
+                      Hyundai Aura CNG - ₹3,000/day
+                    </option>
+                    <option value="Maruti Brezza - ₹3,200/day">
+                      Maruti Brezza - ₹3,200/day
+                    </option>
+                    <option value="Maruti Ertiga CNG - ₹3,500/day">
+                      Maruti Ertiga CNG - ₹3,500/day
+                    </option>
+                  </optgroup>
+                  <optgroup label="Premium Options">
+                    <option value="Hyundai Creta - ₹3,800/day">
+                      Hyundai Creta - ₹3,800/day
+                    </option>
+                    <option value="Mahindra Thar - ₹4,500/day">
+                      Mahindra Thar - ₹4,500/day
+                    </option>
+                    <option value="Mahindra Scorpio N - ₹5,500/day">
+                      Mahindra Scorpio N - ₹5,500/day
+                    </option>
+                    <option value="Toyota Fortuner - ₹8,000/day">
+                      Toyota Fortuner - ₹8,000/day
+                    </option>
+                  </optgroup>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-search">
+                <i class="fab fa-whatsapp"></i>
+                Book Now
+              </button>
+            </form>
+          </div>
+
+          <!-- Key Benefits -->
+          <div class="hero-benefits">
+            <div class="benefit-item">
+              <i class="fas fa-money-bill-wave"></i>
+              <span>Best Prices Guaranteed</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-car"></i>
+              <span>10+ Premium Cars</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Instant Confirmation</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-truck"></i>
+              <span>Free Home Delivery</span>
+            </div>
+          </div>
+
+          <!-- Special Offer Banner -->
+          <div class="offer-banner">
+            <i class="fas fa-gift"></i>
+            <span>🎉 Special Offer: 20% OFF on Weekend Bookings!</span>
+            <small>Use code: WEEKEND20</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 class="section-title">Why Choose R Rides Car Rental?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h3>Best Prices</h3>
+            <p>Competitive rates starting from ₹2,200/day</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-car"></i>
+            </div>
+            <h3>Wide Selection</h3>
+            <p>10+ car models available for every need</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Easy Booking</h3>
+            <p>Simple online booking process</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Always here to help you</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Cars Section -->
+    <section class="featured-cars" id="fleet">
+      <div class="container">
+        <h2 class="section-title">Our Popular Rental Cars</h2>
+
+        <!-- Budget Friendly -->
+        <div class="car-category">
+          <h3 class="category-title">Budget Friendly</h3>
+          <div class="cars-grid">
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/celerio.jpeg" alt="Celerio" />
+              </div>
+              <div class="car-info">
+                <h4>Maruti Celerio</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                  <span><i class="fas fa-users"></i> 4 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Manual</span>
+                </div>
+                <div class="car-price">₹2,200<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/swift.jpeg" alt="Swift" />
+              </div>
+              <div class="car-info">
+                <h4>Maruti Swift</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                  <span><i class="fas fa-users"></i> 5 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Manual</span>
+                </div>
+                <div class="car-price">₹2,500<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Cars -->
+        <div class="car-category">
+          <h3 class="category-title">Family Cars</h3>
+          <div class="cars-grid">
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/aura.jpeg" alt="Aura CNG" />
+              </div>
+              <div class="car-info">
+                <h4>Hyundai Aura CNG</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-leaf"></i> CNG</span>
+                  <span><i class="fas fa-users"></i> 5 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Manual</span>
+                </div>
+                <div class="car-price">₹3,000<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/brezza.jpeg" alt="Brezza" />
+              </div>
+              <div class="car-info">
+                <h4>Maruti Brezza</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                  <span><i class="fas fa-users"></i> 5 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Automatic</span>
+                </div>
+                <div class="car-price">₹3,200<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/ertiga.jpeg" alt="Ertiga" />
+              </div>
+              <div class="car-info">
+                <h4>Maruti Ertiga CNG</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-leaf"></i> CNG</span>
+                  <span><i class="fas fa-users"></i> 7 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Manual</span>
+                </div>
+                <div class="car-price">₹3,500<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Options -->
+        <div class="car-category">
+          <h3 class="category-title">Premium Options</h3>
+          <div class="cars-grid">
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/creta.jpeg" alt="Creta" />
+              </div>
+              <div class="car-info">
+                <h4>Hyundai Creta</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                  <span><i class="fas fa-users"></i> 5 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Automatic</span>
+                </div>
+                <div class="car-price">₹3,800<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/thar.jpeg" alt="Thar" />
+              </div>
+              <div class="car-info">
+                <h4>Mahindra Thar</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                  <span><i class="fas fa-users"></i> 4 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Manual</span>
+                </div>
+                <div class="car-price">₹4,500<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/scorpio.jpeg" alt="Scorpio N" />
+              </div>
+              <div class="car-info">
+                <h4>Mahindra Scorpio N</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                  <span><i class="fas fa-users"></i> 7 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Automatic</span>
+                </div>
+                <div class="car-price">₹5,500<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="car-image">
+                <img src="images/cars/fortuner.jpeg" alt="Fortuner" />
+              </div>
+              <div class="car-info">
+                <h4>Toyota Fortuner</h4>
+                <div class="car-features">
+                  <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                  <span><i class="fas fa-users"></i> 7 Seater</span>
+                  <span><i class="fas fa-cogs"></i> Automatic</span>
+                </div>
+                <div class="car-price">₹8,000<span>/day</span></div>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Ready to Book?</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>Call us: +91-9919544949</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp: +91-9919544949</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>Email: panditrudra2001@gmail.com</span>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-booking-form">
+            <div class="form-row">
+              <div class="location-input">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="location-display">Lucknow</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <input type="date" id="contact-pickup-date" required />
+              <select id="contact-car-selection" required>
+                <option value="">Select Car</option>
+                <optgroup label="Budget Friendly">
+                  <option value="Maruti Celerio - ₹2,200/day">
+                    Maruti Celerio - ₹2,200/day
+                  </option>
+                  <option value="Maruti Swift - ₹2,500/day">
+                    Maruti Swift - ₹2,500/day
+                  </option>
+                </optgroup>
+                <optgroup label="Family Cars">
+                  <option value="Hyundai Aura CNG - ₹3,000/day">
+                    Hyundai Aura CNG - ₹3,000/day
+                  </option>
+                  <option value="Maruti Brezza - ₹3,200/day">
+                    Maruti Brezza - ₹3,200/day
+                  </option>
+                  <option value="Maruti Ertiga CNG - ₹3,500/day">
+                    Maruti Ertiga CNG - ₹3,500/day
+                  </option>
+                </optgroup>
+                <optgroup label="Premium Options">
+                  <option value="Hyundai Creta - ₹3,800/day">
+                    Hyundai Creta - ₹3,800/day
+                  </option>
+                  <option value="Mahindra Thar - ₹4,500/day">
+                    Mahindra Thar - ₹4,500/day
+                  </option>
+                  <option value="Mahindra Scorpio N - ₹5,500/day">
+                    Mahindra Scorpio N - ₹5,500/day
+                  </option>
+                  <option value="Toyota Fortuner - ₹8,000/day">
+                    Toyota Fortuner - ₹8,000/day
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i>
+              Book via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <p>&copy; 2025 R Rides Car Rental. All rights reserved.</p>
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
