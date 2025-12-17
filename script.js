@@ -94,9 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // Create WhatsApp message
       const message = `Hi! I'd like to book a car rental.
 
-🚗 Car: ${carSelection}
-📍 Pickup Location: ${pickupLocation}
-📅 Date: ${formattedDate}
+ Car: ${carSelection}
+ Pickup Location: ${pickupLocation}
+ Date: ${formattedDate}
 
 Please confirm availability and share the booking details. Looking forward to your response!
 
@@ -114,9 +114,8 @@ Thank you!`;
       showNotification("Redirecting to WhatsApp...", "success");
 
       // Open WhatsApp in a new tab after a brief delay
-      setTimeout(() => {
-        window.open(whatsappURL, "_blank");
-      }, 1000);
+      window.location.href = whatsappURL;
+
     });
   }
 
@@ -159,9 +158,9 @@ Thank you!`;
       // Create WhatsApp message
       const message = `Hi! I'd like to book a car rental.
 
-🚗 Car: ${carSelection}
-📍 Pickup Location: ${pickupLocation}
-📅 Date: ${formattedDate}
+ Car: ${carSelection}
+ Pickup Location: ${pickupLocation}
+ Date: ${formattedDate}
 
 Please confirm availability and share the booking details. Looking forward to your response!
 
@@ -179,9 +178,8 @@ Thank you!`;
       showNotification("Redirecting to WhatsApp...", "success");
 
       // Open WhatsApp in a new tab after a brief delay
-      setTimeout(() => {
-        window.open(whatsappURL, "_blank");
-      }, 1000);
+      window.location.href = whatsappURL;
+
     });
   }
 
