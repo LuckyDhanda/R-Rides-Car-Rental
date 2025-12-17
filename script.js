@@ -246,7 +246,7 @@ Thank you!`;
   const headerBookButton = document.querySelector(".nav-right .btn");
   if (headerBookButton) {
     headerBookButton.addEventListener("click", function (e) {
-      e.preventDefault();
+      // e.preventDefault();
 
       const heroSection = document.getElementById("home");
       if (heroSection) {
