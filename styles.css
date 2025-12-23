@@ -533,44 +533,60 @@ h6 {
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.7fr;
   gap: 4rem;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-.contact-item {
+.contact-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.contact-row {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.2rem;
+  color: #374151;
+  font-weight: 500;
 }
 
-.contact-item i {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+.contact-row i {
+  width: 38px;
+  height: 38px;
+  background: #2563eb;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  flex-shrink: 0;
 }
 
-.contact-item span {
-  font-weight: 500;
-  color: #374151;
+.address-row {
+  align-items: flex-start;
 }
+
+.address-row i {
+  margin-top: 4px;
+}
+
+.contact-row span {
+  line-height: 1.5;
+}
+
 
 .contact-form {
   background: white;
